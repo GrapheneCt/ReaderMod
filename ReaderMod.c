@@ -119,7 +119,7 @@ int module_start(SceSize argc, const void *args)
 		taiInjectData(info.modid, 0x00, 0x109FFF, s2, 0x01);
 	}
 
-	//Relocate translation files from app:0 to ux0:data/rddat/
+	//Relocate translation files from app0: to ux0:data/rddat/
 	char str1[0x0F] = "ux0:data/rddat/";
 	taiInjectData(info.modid, 0x00, 0x2F07A8, str1, 0x0F);
 	char str2[0x0E] = "ux0:data/rddat";
